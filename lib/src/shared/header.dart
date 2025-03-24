@@ -53,6 +53,8 @@ class Header extends StatelessWidget {
     this.centerLeadingDate = false,
     this.previousPageSemanticLabel,
     this.nextPageSemanticLabel,
+    required this.forwardIcon,
+    required this.backIcon,
   });
 
   /// The currently displayed date. It is typically in a format
@@ -97,6 +99,10 @@ class Header extends StatelessWidget {
   /// Semantic label for button to go to the next page.
   final String? nextPageSemanticLabel;
 
+  final Widget forwardIcon;
+
+  final Widget backIcon;
+
   @override
   Widget build(BuildContext context) {
     final forwardButton = GestureDetector(
@@ -108,11 +114,7 @@ class Header extends StatelessWidget {
           decoration: const BoxDecoration(
             shape: BoxShape.circle,
           ),
-          child: Icon(
-            Icons.arrow_forward_ios_rounded,
-            size: slidersSize,
-            color: slidersColor,
-          ),
+          child: forwardIcon,
         ),
       ),
     );
@@ -126,11 +128,7 @@ class Header extends StatelessWidget {
           decoration: const BoxDecoration(
             shape: BoxShape.circle,
           ),
-          child: Icon(
-            Icons.arrow_back_ios_rounded,
-            size: slidersSize,
-            color: slidersColor,
-          ),
+          child: backIcon,
         ),
       ),
     );

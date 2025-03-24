@@ -74,6 +74,8 @@ class DaysPicker extends StatefulWidget {
     this.previousPageSemanticLabel = 'Previous Day',
     this.nextPageSemanticLabel = 'Next Day',
     this.disabledDayPredicate,
+    required this.forwardIcon,
+    required this.backIcon,
   }) {
     assert(!minDate.isAfter(maxDate), "minDate can't be after maxDate");
     assert(
@@ -236,6 +238,10 @@ class DaysPicker extends StatefulWidget {
 
   /// A predicate function used to determine if a given day should be disabled.
   final DatePredicate? disabledDayPredicate;
+
+  final Widget forwardIcon;
+
+  final Widget backIcon;
 
   @override
   State<DaysPicker> createState() => _DaysPickerState();
@@ -442,6 +448,8 @@ class _DaysPickerState extends State<DaysPicker> {
               },
               previousPageSemanticLabel: widget.previousPageSemanticLabel,
               nextPageSemanticLabel: widget.nextPageSemanticLabel,
+              backIcon: widget.backIcon,
+              forwardIcon: widget.forwardIcon,
             ),
             const SizedBox(height: 10),
             Expanded(

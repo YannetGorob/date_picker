@@ -80,6 +80,8 @@ class DatePicker extends StatefulWidget {
     this.previousPageSemanticLabel,
     this.nextPageSemanticLabel,
     this.disabledDayPredicate,
+    required this.forwardIcon,
+    required this.backIcon,
   }) {
     assert(!minDate.isAfter(maxDate), "minDate can't be after maxDate");
   }
@@ -229,6 +231,10 @@ class DatePicker extends StatefulWidget {
   /// A predicate function used to determine if a given day should be disabled.
   final DatePredicate? disabledDayPredicate;
 
+  final Widget forwardIcon;
+
+  final Widget backIcon;
+
   @override
   State<DatePicker> createState() => _DatePickerState();
 }
@@ -309,6 +315,8 @@ class _DatePickerState extends State<DatePicker> {
               });
               widget.onDateSelected?.call(selectedDate);
             },
+            backIcon: widget.backIcon,
+            forwardIcon: widget.forwardIcon,
           ),
         );
       case PickerType.months:
@@ -354,6 +362,8 @@ class _DatePickerState extends State<DatePicker> {
                 _pickerType = PickerType.days;
               });
             },
+            backIcon: widget.backIcon,
+            forwardIcon: widget.forwardIcon,
           ),
         );
       case PickerType.years:
@@ -394,6 +404,8 @@ class _DatePickerState extends State<DatePicker> {
                 _pickerType = PickerType.months;
               });
             },
+            backIcon: widget.backIcon,
+            forwardIcon: widget.forwardIcon,
           ),
         );
     }

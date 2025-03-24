@@ -71,6 +71,8 @@ class MonthPicker extends StatefulWidget {
     this.centerLeadingDate = false,
     this.previousPageSemanticLabel = 'Previous Month',
     this.nextPageSemanticLabel = 'Next Month',
+    required this.forwardIcon,
+    required this.backIcon,
   }) {
     assert(!minDate.isAfter(maxDate), "minDate can't be after maxDate");
 
@@ -225,6 +227,10 @@ class MonthPicker extends StatefulWidget {
 
   /// Semantic label for button to go to the next page.
   final String? nextPageSemanticLabel;
+
+  final Widget forwardIcon;
+
+  final Widget backIcon;
 
   @override
   State<MonthPicker> createState() => _MonthPickerState();
@@ -407,6 +413,8 @@ class _MonthPickerState extends State<MonthPicker> {
                   curve: Curves.ease,
                 );
               },
+              backIcon: widget.backIcon,
+              forwardIcon: widget.forwardIcon,
             ),
             const SizedBox(height: 10),
             Expanded(

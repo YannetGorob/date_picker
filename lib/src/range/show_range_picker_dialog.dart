@@ -72,6 +72,8 @@ Future<DateTimeRange?> showRangePickerDialog({
   bool centerLeadingDate = false,
   String? previousPageSemanticLabel,
   String? nextPageSemanticLabel,
+  required Widget forwardIcon,
+  required Widget backIcon,
 }) async {
   return showDialog<DateTimeRange>(
     context: context,
@@ -129,6 +131,8 @@ Future<DateTimeRange?> showRangePickerDialog({
                 splashRadius: splashRadius,
                 previousPageSemanticLabel: previousPageSemanticLabel,
                 nextPageSemanticLabel: nextPageSemanticLabel,
+                backIcon: backIcon,
+                forwardIcon: forwardIcon,
               ),
             ),
           ),

@@ -69,6 +69,8 @@ class YearsPicker extends StatefulWidget {
     this.centerLeadingDate = false,
     this.previousPageSemanticLabel = 'Previous Year',
     this.nextPageSemanticLabel = 'Next Year',
+    required this.forwardIcon,
+    required this.backIcon,
   }) {
     assert(!minDate.isAfter(maxDate), "minDate can't be after maxDate");
 
@@ -223,6 +225,10 @@ class YearsPicker extends StatefulWidget {
 
   /// Semantic label for button to go to the next page.
   final String? nextPageSemanticLabel;
+
+  final Widget forwardIcon;
+
+  final Widget backIcon;
 
   @override
   State<YearsPicker> createState() => _YearsPickerState();
@@ -426,6 +432,8 @@ class _YearsPickerState extends State<YearsPicker> {
                   curve: Curves.ease,
                 );
               },
+              backIcon: widget.backIcon,
+              forwardIcon: widget.forwardIcon,
             ),
             const SizedBox(height: 10),
             Flexible(

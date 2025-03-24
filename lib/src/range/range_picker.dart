@@ -82,6 +82,8 @@ class RangeDatePicker extends StatefulWidget {
     this.centerLeadingDate = false,
     this.previousPageSemanticLabel,
     this.nextPageSemanticLabel,
+    required this.forwardIcon,
+    required this.backIcon,
   }) {
     assert(!minDate.isAfter(maxDate), "minDate can't be after maxDate");
   }
@@ -262,6 +264,10 @@ class RangeDatePicker extends StatefulWidget {
   /// defaults to `Next Day/Month/Year` according to picker type.
   final String? nextPageSemanticLabel;
 
+  final Widget forwardIcon;
+
+  final Widget backIcon;
+
   @override
   State<RangeDatePicker> createState() => _RangeDatePickerState();
 }
@@ -380,6 +386,8 @@ class _RangeDatePickerState extends State<RangeDatePicker> {
 
               widget.onStartDateChanged?.call(date);
             },
+            backIcon: widget.backIcon,
+            forwardIcon: widget.forwardIcon,
           ),
         );
       case PickerType.months:
@@ -426,6 +434,8 @@ class _RangeDatePickerState extends State<RangeDatePicker> {
                 _pickerType = PickerType.days;
               });
             },
+            backIcon: widget.backIcon,
+            forwardIcon: widget.forwardIcon,
           ),
         );
       case PickerType.years:
@@ -467,6 +477,8 @@ class _RangeDatePickerState extends State<RangeDatePicker> {
                 _pickerType = PickerType.months;
               });
             },
+            backIcon: widget.backIcon,
+            forwardIcon: widget.forwardIcon,
           ),
         );
     }
