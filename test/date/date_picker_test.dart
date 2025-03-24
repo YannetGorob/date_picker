@@ -16,6 +16,16 @@ void main() {
               child: DatePicker(
                 minDate: minDate,
                 maxDate: maxDate,
+                forwardIcon: const Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
+                backIcon: const Icon(
+                  Icons.arrow_back_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
               ),
             ),
           ),
@@ -35,6 +45,16 @@ void main() {
               child: DatePicker(
                 minDate: minDate,
                 maxDate: maxDate,
+                forwardIcon: const Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
+                backIcon: const Icon(
+                  Icons.arrow_back_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
               ),
             ),
           ),

@@ -51,6 +51,16 @@ void main() {
                 slidersSize: 20,
                 splashColor: Colors.black,
                 highlightColor: Colors.black,
+                forwardIcon: const Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
+                backIcon: const Icon(
+                  Icons.arrow_back_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
               ),
             );
           }),
@@ -110,6 +120,16 @@ void main() {
                 slidersSize: 20,
                 splashColor: Colors.black,
                 highlightColor: Colors.black,
+                forwardIcon: const Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
+                backIcon: const Icon(
+                  Icons.arrow_back_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
               );
             }),
           ),
@@ -185,6 +205,16 @@ void main() {
                 slidersSize: 20,
                 splashColor: Colors.black,
                 highlightColor: Colors.black,
+                forwardIcon: const Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
+                backIcon: const Icon(
+                  Icons.arrow_back_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
               );
             }),
           ),
@@ -266,6 +296,16 @@ void main() {
                 slidersSize: 20,
                 splashColor: Colors.black,
                 highlightColor: Colors.black,
+                forwardIcon: const Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
+                backIcon: const Icon(
+                  Icons.arrow_back_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
               );
             }),
           ),
@@ -348,6 +388,16 @@ void main() {
                   slidersSize: 20,
                   splashColor: Colors.black,
                   highlightColor: Colors.black,
+                  forwardIcon: const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 20,
+                    color: Colors.lightBlue,
+                  ),
+                  backIcon: const Icon(
+                    Icons.arrow_back_ios_rounded,
+                    size: 20,
+                    color: Colors.lightBlue,
+                  ),
                 );
               }),
             ),
@@ -444,6 +494,16 @@ void main() {
                   slidersSize: 20,
                   splashColor: Colors.black,
                   highlightColor: Colors.black,
+                  forwardIcon: const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 20,
+                    color: Colors.lightBlue,
+                  ),
+                  backIcon: const Icon(
+                    Icons.arrow_back_ios_rounded,
+                    size: 20,
+                    color: Colors.lightBlue,
+                  ),
                 );
               }),
             ),
@@ -540,6 +600,16 @@ void main() {
                   slidersSize: 20,
                   splashColor: Colors.black,
                   highlightColor: Colors.black,
+                  forwardIcon: const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 20,
+                    color: Colors.lightBlue,
+                  ),
+                  backIcon: const Icon(
+                    Icons.arrow_back_ios_rounded,
+                    size: 20,
+                    color: Colors.lightBlue,
+                  ),
                 );
               }),
             ),
@@ -637,6 +707,16 @@ void main() {
                   slidersSize: 20,
                   splashColor: Colors.black,
                   highlightColor: Colors.black,
+                  forwardIcon: const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 20,
+                    color: Colors.lightBlue,
+                  ),
+                  backIcon: const Icon(
+                    Icons.arrow_back_ios_rounded,
+                    size: 20,
+                    color: Colors.lightBlue,
+                  ),
                 );
               }),
             ),
@@ -703,6 +783,16 @@ void main() {
                   slidersSize: slidersSize,
                   splashColor: Colors.black,
                   highlightColor: Colors.black,
+                  forwardIcon: const Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    size: 20,
+                    color: Colors.lightBlue,
+                  ),
+                  backIcon: const Icon(
+                    Icons.arrow_back_ios_rounded,
+                    size: 20,
+                    color: Colors.lightBlue,
+                  ),
                 );
               }),
             ),
@@ -749,6 +839,16 @@ void main() {
               child: RangeDaysPicker(
                 minDate: minDate,
                 maxDate: maxDate,
+                forwardIcon: const Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
+                backIcon: const Icon(
+                  Icons.arrow_back_ios_rounded,
+                  size: 20,
+                  color: Colors.lightBlue,
+                ),
               ),
             ),
           ),
