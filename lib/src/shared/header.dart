@@ -148,7 +148,6 @@ class Header extends StatelessWidget {
           Row(
             children: [
               backButton,
-              const SizedBox(width: 10),
               forwardButton,
             ],
           ),
