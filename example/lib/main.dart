@@ -36,10 +36,21 @@ class MyApp extends StatelessWidget {
                       maxDate: DateTime(2024),
                       initialDate: DateTime(2023, 1),
                       disabledDayPredicate: (date) {
-                        return date.weekday == DateTime.sunday || date.weekday == DateTime.saturday;
+                        return date.weekday == DateTime.sunday ||
+                            date.weekday == DateTime.saturday;
                       },
                       disabledCellsDecoration: const BoxDecoration(
                         color: Colors.green,
+                      ),
+                      forwardIcon: const Icon(
+                        Icons.arrow_forward_ios_rounded,
+                        size: 20,
+                        color: Colors.lightBlue,
+                      ),
+                      backIcon: const Icon(
+                        Icons.arrow_back_ios_rounded,
+                        size: 20,
+                        color: Colors.lightBlue,
                       ),
                     ),
                   ),
